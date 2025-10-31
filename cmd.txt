@@ -1,0 +1,45 @@
+Viner Hand ITC
+
+pyinstaller --onefile --noconsole --name YoutubeVideoDownloader --add-binary "ffmpeg.exe;." main.py
+pyinstaller --onefile --add-binary "ffmpeg.exe;." main.py
+pyinstaller --noconsole --onefile server_tray.py
+pyinstaller --noconsole --onefile server_tray.py
+pyinstaller --onefile server_tray.py
+
+uvicorn main:app --reload
+
+python -m venv venv
+
+venv\Scripts\activate  
+deactivate 
+
+python server_tray.py 
+
+pip list  
+pip show yt-dlp                  
+
+
+pip install --upgrade -r requirements.txt
+
+pip install --upgrade yt-dlp
+
+python -m pip install --upgrade pip
+python -m pip install "yt-dlp<=2025.9.23"
+
+pip uninstall yt-dlp  
+
+netstat -aon | findstr :8000
+
+taskkill /PID <pid> /F
+
+taskkill /PID 1234 /PID 5678 /F
+
+ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,codec_long_name,profile,level,bit_rate,width,height,avg_frame_rate -of default=noprint_wrappers=1 video.mp4
+
+
+ffmpeg -i a.mp4 -c:v libx264 -c:a copy b.mp4
+
+
+chrome.storage.local.get(null, console.log);
+chrome.storage.local.clear(() => console.log("✅ Storage cleared"));
+
