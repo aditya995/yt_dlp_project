@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+yt-dlp
+pystray
+Pillow
+psutil
+packaging
+requests
+python-multipart
